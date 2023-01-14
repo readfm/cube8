@@ -13,7 +13,9 @@ class _Input8State extends State<Input8> {
   @override
   Widget build(BuildContext context) {
     return TextFormField(
+      autofocus: true,
       decoration: InputDecoration(
+        isDense: true,
         contentPadding: EdgeInsets.all(8),
       ),
       controller: widget.controller,

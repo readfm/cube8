@@ -1,8 +1,8 @@
 version: "Apple Swift version 5.7.2 (swiftlang-5.7.2.135.5 clang-1400.0.29.51)"
 options: "1324817bde25d16c6737058822f801327d303c83e7dcc790ceb5e022177583a9"
-build_start_time: [1672697381, 279237031]
-build_end_time: [1672697381, 383494853]
+build_start_time: [1673644793, 68149089]
+build_end_time: [1673644793, 217966079]
 inputs:
-  "/Users/mk/Desktop/Duke/oo8/macos/Flutter/GeneratedPluginRegistrant.swift": !private [1672697359, 964335918]
+  "/Users/mk/Desktop/Duke/oo8/macos/Flutter/GeneratedPluginRegistrant.swift": !private [1673644769, 413985729]
   "/Users/mk/Desktop/Duke/oo8/macos/Runner/AppDelegate.swift": !private [1631993090, 338100910]
   "/Users/mk/Desktop/Duke/oo8/macos/Runner/MainFlutterWindow.swift": !private [1631993090, 339469194]

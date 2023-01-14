@@ -1,19 +1,22 @@
 import 'package:flutter/material.dart';
 
 import 'app.dart';
+import 'models/app.dart';
 
 void main() {
-  runApp(MyApp());
+  final app = Oo8Fractal();
+  runApp(MyApp(app));
 }
 
 class MyApp extends StatelessWidget {
-  MyApp({super.key});
+  Oo8Fractal app;
+  MyApp(this.app, {super.key});
 
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: 'Oo8',
       theme: ThemeData(
         // This is the theme of your application.
         //
@@ -26,7 +29,7 @@ class MyApp extends StatelessWidget {
         // is not restarted.
         primarySwatch: Colors.blue,
       ),
-      home: Oo8App(),
+      home: Oo8App(app),
     );
   }
 }
