@@ -6,19 +6,15 @@
 	<dict>
 		<key>Resources/AppIcon.icns</key>
 		<data>
-		URS7ZMjS6R2b/EKu5Z1xZIypGck=
+		aAxGg0Q+dQoQhfAk9AHVCAev338=
 		</data>
 		<key>Resources/Assets.car</key>
 		<data>
-		rfkYTTe+/RTHXBKLiKowxex6K/c=
+		QRU3/LZV3Ti5yJ343NbUp08Khhk=
 		</data>
-		<key>Resources/Base.lproj/MainMenu.nib/keyedobjects-101300.nib</key>
+		<key>Resources/Base.lproj/MainMenu.nib</key>
 		<data>
 		b8SUDp883vxOE7nUL5r/FAxSEzI=
-		</data>
-		<key>Resources/Base.lproj/MainMenu.nib/keyedobjects.nib</key>
-		<data>
-		WaWiheBwf5eymg3qptJupdPOnNY=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -27,19 +23,19 @@
 		<dict>
 			<key>cdhash</key>
 			<data>
-			96ZXRikDNy0riQAGhlwbj7h5jjM=
+			xX5pQvafRRkmpCDg1nqXemiGJjQ=
 			</data>
 			<key>requirement</key>
-			<string>cdhash H"f7a657462903372d2b890006865c1b8fb8798e33"</string>
+			<string>cdhash H"c57e6942f69f451926a420e0d67a977a68862634"</string>
 		</dict>
 		<key>Frameworks/FlutterMacOS.framework</key>
 		<dict>
 			<key>cdhash</key>
 			<data>
-			/3ERer/VmDcJgTpb/aVvNEr5ZEg=
+			5ma6c8Iq2PkMgll4JwvacjMsWCw=
 			</data>
 			<key>requirement</key>
-			<string>cdhash H"ff71117abfd5983709813a5bfda56f344af96448"</string>
+			<string>cdhash H"e666ba73c22ad8f90c825978270bda72332c582c"</string>
 		</dict>
 		<key>Frameworks/libswiftAppKit.dylib</key>
 		<dict>
@@ -194,32 +190,52 @@
 			<key>requirement</key>
 			<string>cdhash H"3406aab10f486b91c2d9334de341504de56a5631" or cdhash H"73e04119822f2d8cd5eeb426ddac2b2b98295def"</string>
 		</dict>
+		<key>Frameworks/path_provider_foundation.framework</key>
+		<dict>
+			<key>cdhash</key>
+			<data>
+			wtrs8DjGjaKNh8N/9GISgG8KRuU=
+			</data>
+			<key>requirement</key>
+			<string>cdhash H"c2daecf038c68da28d87c37ff46212806f0a46e5"</string>
+		</dict>
+		<key>Frameworks/sqlite3.framework</key>
+		<dict>
+			<key>cdhash</key>
+			<data>
+			dKJucbp3qTdw4zP0BqnrXL1P0bk=
+			</data>
+			<key>requirement</key>
+			<string>cdhash H"74a26e71ba77a93770e333f406a9eb5cbd4fd1b9"</string>
+		</dict>
+		<key>Frameworks/sqlite3_flutter_libs.framework</key>
+		<dict>
+			<key>cdhash</key>
+			<data>
+			LArOsInnYHZLNGsGbX5PkRNtkgg=
+			</data>
+			<key>requirement</key>
+			<string>cdhash H"2c0aceb089e760764b346b066d7e4f91136d9208"</string>
+		</dict>
 		<key>Resources/AppIcon.icns</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			mnw/86rBhdpr28A9GFSr/xwLnYgcKRhSPRhn0wpyVWQ=
+			cmkXXoTx+ZUjFC50oDL4Cmb6f++oBA9wPejlIra72Gc=
 			</data>
 		</dict>
 		<key>Resources/Assets.car</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			R7OFtpJkkNc1UeCYFSF3+1UrJJZD2fWsOkcV9KEHpoE=
+			EuJWQbOeKwc3a4+9WzZlGBFiDGAjKABusxYRiJ3iw60=
 			</data>
 		</dict>
-		<key>Resources/Base.lproj/MainMenu.nib/keyedobjects-101300.nib</key>
+		<key>Resources/Base.lproj/MainMenu.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
 			xiujXtRtS1ATP6b0TMu6Zwbn6kAK+u7ZVRpHv7hhc4M=
-			</data>
-		</dict>
-		<key>Resources/Base.lproj/MainMenu.nib/keyedobjects.nib</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			V8pIOcukbB0l9q8H4U3FzP3tezUiVusU3azSrc273NA=
 			</data>
 		</dict>
 	</dict>

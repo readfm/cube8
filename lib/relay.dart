@@ -1,24 +1,31 @@
 import 'dart:convert';
 
 import 'package:http/http.dart' as http;
-import 'package:nostr_client/nostr_client.dart';
+import 'package:nostr_client/nostr_client.dart' hide Event;
 import 'package:uuid/uuid.dart';
 import 'package:web_socket_channel/web_socket_channel.dart';
 
 class Relay {
-  const Relay._(
-    this._url,
-    this._channel,
-  );
-
-  factory Relay.connect(String url) {
-    final uri = Uri.parse(url);
-    final channel = WebSocketChannel.connect(uri);
-    return Relay._(url, channel);
+  Relay(this._url, {Function? onReady}) {
+    _onReady = onReady;
+    connect();
   }
 
+  Function? _onReady;
+
+  connect() {
+    final uri = Uri.parse(_url);
+    _channel = WebSocketChannel.connect(uri)
+      ..ready.then((_) {
+        isConnected = true;
+        _onReady?.call();
+      });
+  }
+
+  bool isConnected = false;
+
   final String _url;
-  final WebSocketChannel _channel;
+  late final WebSocketChannel _channel;
 
   /// The relay information document of the relay.
   Future<RelayInformationDocument> get informationDocument async {
@@ -36,8 +43,8 @@ class Relay {
   }
 
   /// Send the given [event] to the realy.
-  void send(Event event) {
-    final message = ['EVENT', event.toJson()];
+  void send(Map<String, dynamic> m) {
+    final message = ['EVENT', m];
     final request = jsonEncode(message);
     _channel.sink.add(request);
   }
@@ -58,6 +65,7 @@ class Relay {
     final message = ['CLOSE', subscriptionId];
     final messageJson = jsonEncode(message);
     _channel.sink.add(messageJson);
+    isConnected = false;
   }
 
   /// Terminates the connection to the relay.

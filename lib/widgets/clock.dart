@@ -23,11 +23,18 @@ class _ClockFieldState extends State<ClockField> {
   @override
   Widget build(BuildContext context) {
     //seconds
-    return Text(
-      (DateTime.now().millisecondsSinceEpoch ~/ 1000).toString(),
-      style: const TextStyle(
-        fontSize: 12,
-        color: Colors.grey,
+    return Container(
+      padding: EdgeInsets.symmetric(
+        vertical: 4,
+        horizontal: 8,
+      ),
+      alignment: Alignment.centerRight,
+      child: Text(
+        (DateTime.now().millisecondsSinceEpoch ~/ 1000).toString(),
+        style: const TextStyle(
+          fontSize: 14,
+          color: Colors.black,
+        ),
       ),
     );
   }

@@ -4,7 +4,5 @@ import 'package:nostr_client/nostr_client.dart' hide Relay;
 class NostrFractal {
   late final Relay relay;
 
-  NostrFractal(String host) {
-    relay = Relay.connect('ws://$host');
-  }
+  NostrFractal(String host) {}
 }

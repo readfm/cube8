@@ -14,6 +14,10 @@ class _Input8State extends State<Input8> {
   Widget build(BuildContext context) {
     return TextFormField(
       autofocus: true,
+      style: TextStyle(
+        fontSize: 14,
+        color: Colors.black,
+      ),
       decoration: InputDecoration(
         isDense: true,
         contentPadding: EdgeInsets.all(8),
